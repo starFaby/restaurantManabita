@@ -1,0 +1,14 @@
+<mat-toolbar class="colorToolbar">
+    <mat-toolbar-row>
+      <button mat-icon-button matTooltip="Administrador" (click)="onToggleSidenav()">
+        <mat-icon>list_alt</mat-icon>
+      </button>
+      <button mat-icon-button matTooltip="Administrador" [routerLink]="[ '/' ]">
+        <mat-icon>home</mat-icon>
+      </button>
+      <span class="spacer"></span>
+      <button mat-icon-button matTooltip="Salir de Sesion">
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="user icon">directions_run</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>

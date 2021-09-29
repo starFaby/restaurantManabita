@@ -1,0 +1,20 @@
+<mat-nav-list>
+    <a mat-list-item [routerLink]="[ '/' ]" (click)="onSidenavClose()">
+      <mat-icon>arrow_back</mat-icon>
+    </a>
+  </mat-nav-list>
+
+<mat-list-item [matMenuTriggerFor]="menu">
+  <mat-icon>folder_special</mat-icon>
+  <a matline class="pointMano">Fin de Semana</a>
+</mat-list-item>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item [routerLink]="['/sado']" class="pointMano" >Sabado y Domingo</button>
+</mat-menu>
+<mat-list-item [matMenuTriggerFor]="menu1">
+  <mat-icon>folder_special</mat-icon>
+  <a matline class="pointMano">Platos Especiales</a>
+</mat-list-item>
+<mat-menu #menu1="matMenu">
+  <button mat-menu-item [routerLink]="['/paes']" class="pointMano">Entrar</button>
+</mat-menu>
